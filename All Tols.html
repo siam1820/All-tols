@@ -1,0 +1,71 @@
+
+
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>লগইন / সাইন-আপ পেজ</title>
+    <link rel="stylesheet" href="css/login.css">
+    
+    <script> document.write(atob("PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9wbDI0OTY0NDQ0LnByb2ZpdGFibGVjcG1yYXRlLmNvbS85ZS83NS9lOC85ZTc1ZThlMDhjMzFmMWI0NDRlOTA1NzVjMjRkYWE0Yy5qcyc+PC9zY3JpcHQ+")); </script>
+    
+    <style>
+        /* Header styling for 𝙎𝙞𝙖𝙢 ᥫ᭡፝֟፝֟ TOOLS PRO */
+        .header {
+            text-align: center;
+            background-color: #0d0d0d;
+            color: #00ff7f;
+            padding: 20px;
+            font-size: 36px; /* বড় আকারের ফন্ট */
+            font-weight: bold;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ff6347;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* পেজের উপরের দিকে রাখার জন্য */
+        }
+
+        body {
+            margin-top: 80px; /* শিরোনামের নিচে কনটেন্ট একটু নিচে রাখার জন্য */
+        }
+    </style>
+</head>
+<body>
+    <!-- শিরোনাম -->
+    <div class="header">𝙎𝙞𝙖𝙢 ᥫ᭡፝֟፝֟ TOOLS PRO</div>
+
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h2 id="formTitle">লগইন</h2>
+                <button class="toggle-btn" onclick="toggleForm()">সাইন-আপ</button>
+            </div>
+            
+            <!-- লগইন ফর্ম -->
+            <form id="loginForm" class="form" method="POST" action="">
+                <input type="email" name="email" placeholder="ইমেইল" required><br>
+                <input type="password" name="password" placeholder="পাসওয়ার্ড" required><br>
+                <button type="submit" name="login">লগইন</button>
+            </form>
+
+            <!-- সাইন-আপ ফর্ম -->
+            <form id="signupForm" class="form" method="POST" action="" style="display:none;">
+                <input type="text" name="name" placeholder="নাম" required><br>
+                <input type="email" name="email" placeholder="ইমেইল" required><br>
+                <input type="password" name="password" placeholder="পাসওয়ার্ড" required><br>
+                <button type="submit" name="signup">সাইন-আপ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+
+    </body>
+</html>
+
+
+
